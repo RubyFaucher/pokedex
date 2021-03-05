@@ -1,0 +1,20 @@
+<div class="cadre">
+  <div class="img">
+    <img class="img-pokemon" src="{{ this._pokemon.img }}" />
+  </div>
+  <div class="pokemon">
+    <div class="nomId">
+      <span> {{ this._pokemon.name }}</span>
+      <span class="id">
+        <b>n°{{ this._pokemon.id }}</b>
+      </span>
+    </div>
+    <br />
+    Type(s): <br />
+    <ul>
+      <li *ngFor="let t of this._pokemon.type">
+        {{ t }}
+      </li>
+    </ul>
+  </div>
+</div>
